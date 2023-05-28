@@ -1,0 +1,23 @@
+// Basics
+
+@import './basics/colores.scss';
+@import './basics/tipografias.scss';
+@import './basics/botones.scss';
+@import './basics/formularios.scss';
+
+
+//Layout
+
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/footer.scss';
+
+
+//paginas
+@import './paginas/index.scss';
+@import './paginas/servicios.scss';
+@import './paginas/tienda.scss';
+@import './paginas/staff.scss';
+@import './paginas/galeria.scss';
+@import './paginas/contacto.scss';
+@import './paginas/turno.scss';

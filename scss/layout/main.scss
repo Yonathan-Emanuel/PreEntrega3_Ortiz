@@ -1,0 +1,36 @@
+//body
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: map-get($map: $colores-fondo, $key: tercero );
+}
+
+//enlaces
+a {
+    text-decoration: none;
+}
+
+//titulos
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: map-get($colores-fuente, primario);
+}
+
+h2 {
+    color: map-get($colores-fuente, primario);
+    font-weight: 400;
+}
+
+h3 {
+    color: map-get($colores-fuente, secundario);
+    font-weight: 250;
+}
+
+//parrafo
+p {
+    color: map-get($colores-fuente, secundario);
+    font-weight: 100;
+}

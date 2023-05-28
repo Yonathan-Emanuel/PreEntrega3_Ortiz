@@ -1,0 +1,23 @@
+//main
+
+.staff{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-image: url(../imagenes/staff/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    h1{
+        padding: 120px 120px 30px;
+        text-align: center;
+    }
+    .barbero{
+        img{
+        border-radius: 20px;
+        &:hover {
+            border: 2px solid map-get($map: $colores-fuente, $key: primario);
+        }
+    }
+    }
+}

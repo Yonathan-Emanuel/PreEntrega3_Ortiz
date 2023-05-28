@@ -1,0 +1,59 @@
+//main
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180px auto auto;
+    grid-template-areas: "titulo titulo" 
+    "formulario contactanos"
+    "formulario mapa";
+    .titulo {
+        background-color: map-get($map: $colores-fondo, $key: primero);
+        display: flex;
+        width: 100%;
+        height: 180px;
+        padding: 20px;
+        grid-area: titulo;
+        justify-content: center;
+        align-items: end;
+    }
+    h2{
+        padding: 0 30px 15px 30px;
+        color: white;
+    }
+    .formulario {
+        background-color:map-get($map: $colores-fondo, $key: tercero);
+        width: 100%;
+        height: 600px;
+        grid-area: formulario;
+        padding: 30px;
+        text-align: center;
+    
+    }
+    .contactanos {
+        background-color: map-get($map: $colores-fuente, $key: primario);
+        width: 100%;
+        text-align: center;
+        height: 300px;
+        grid-area: contactanos;
+        padding: 30px;
+    }
+    .mapa {
+        background-color:map-get($map: $colores-fondo, $key: tercero);
+        width: 100%;
+        height: 300px;
+        grid-area: mapa;
+    }
+
+}
+
+//media_query
+
+@media (max-width: 576px){
+    .contacto-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "titulo" "formulario" "contactanos" "mapa";
+        
+    }
+}

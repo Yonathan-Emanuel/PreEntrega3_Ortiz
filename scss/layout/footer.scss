@@ -1,0 +1,26 @@
+@mixin footer-mixin($fondo, $width, $display, $direction, $justify, $padding){
+    background-color: $fondo;
+    width: $width;
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    padding: $padding;
+}
+
+footer{
+    @include footer-mixin(map-get($map: $colores-fondo, $key: primero),100%,flex,row,space-around,50px 0);
+    footer h2{
+        padding: 20px 0;
+    }
+}
+
+//mediaquery
+
+@media (max-width: 576px){
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}

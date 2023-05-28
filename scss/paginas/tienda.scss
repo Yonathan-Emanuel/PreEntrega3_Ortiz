@@ -1,0 +1,23 @@
+//main
+
+.Tienda {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: map-get($map: $colores-fondo, $key: tercero);
+    h1{
+        padding: 130px 120px 50px;
+        text-align: center;
+    }
+    .caja{
+        h4{
+            color: map-get($map: $colores-fuente, $key: secundario);
+            font-weight: 200;
+        }
+        img {
+            padding: 0 0 20px 0;
+        }
+    }
+}
+

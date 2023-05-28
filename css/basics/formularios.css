@@ -1,0 +1,23 @@
+.form, textarea, input {
+  background-color: #131313;
+  color: #c8a46d;
+  font-weight: 100;
+  width: 300px;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+.form-transparente, .select-transparente, .input-transparente {
+  background-color: transparent;
+  margin: 0 0 10px 0;
+}
+
+.select-transparente {
+  color: #c8a46d;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=formularios.css.map */

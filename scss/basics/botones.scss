@@ -1,0 +1,39 @@
+//boton_estilo_1
+
+.botones{
+    justify-content: center;    
+    width: 200px;
+    padding: 20px;
+    border: 1px solid map-get($map: $colores-fuente, $key: primario);
+    a {
+        text-decoration: none;
+        color:white;
+    }
+}
+    .boton_primario {
+        @extend .botones;
+        color: map-get($map: $colores-fuente, $key: secundario);
+        background-color: map-get($map: $colores-fuente, $key: primario);
+    }
+
+    .boton_secundario {
+        @extend .botones;
+        color: map-get($map: $colores-fuente, $key: secundario);
+        background-color: transparent;
+    }
+
+    .boton_terciario {
+        @extend .botones;
+        color: map-get($map: $colores-fuente, $key: primario);
+        background-color: map-get($map: $colores-fondo, $key: tercero);
+    }
+
+
+//boton_estilo_2
+
+.boton_cuarto {
+    color: #c8a46d;
+    background-color: #131313;
+    padding: 0 30px;
+    margin: 0 20px 0 20px;
+}
