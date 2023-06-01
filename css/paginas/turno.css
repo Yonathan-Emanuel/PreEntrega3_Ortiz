@@ -9,7 +9,7 @@
 .container-turno .turno__titulo {
   width: 100%;
   height: 10%;
-  padding: 20px;
+  padding: 20px 0px 0px;
   text-align: center;
 }
 .container-turno .turno__formulario {
@@ -32,6 +32,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .turno__formulario h2 {
+    padding: 20px;
   }
 }
 

@@ -83,7 +83,11 @@
     .main__nosotros{
         display: flex;
         flex-direction: column;
-        width: 100%;   
+        width: 100%;
+        .nosotros__imagen{
+            display: flex;
+            justify-content: center;
+        }
     }
 
 }

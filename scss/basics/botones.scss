@@ -4,6 +4,7 @@
     justify-content: center;    
     width: 200px;
     padding: 20px;
+    margin: 0px 0px 15px 0px;
     border: 1px solid map-get($map: $colores-fuente, $key: primario);
     a {
         text-decoration: none;

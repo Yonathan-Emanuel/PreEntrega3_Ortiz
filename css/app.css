@@ -7,6 +7,7 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center;
   width: 200px;
   padding: 20px;
+  margin: 0px 0px 15px 0px;
   border: 1px solid #C8A46E;
 }
 .botones a, .boton_terciario a, .boton_secundario a, .boton_primario a {
@@ -241,6 +242,10 @@ footer footer h2 {
     flex-direction: column;
     width: 100%;
   }
+  .main__nosotros .nosotros__imagen {
+    display: flex;
+    justify-content: center;
+  }
 }
 .Servicios {
   width: 100%;
@@ -387,10 +392,15 @@ footer footer h2 {
   text-align: center;
 }
 .galeria img {
-  margin: 15px;
+  margin: 15px 0px;
   border: 1px solid #c8a46d;
 }
 
+@media (max-width: 576px) {
+  .galeria {
+    width: 100%;
+  }
+}
 .contacto-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -453,7 +463,7 @@ footer footer h2 {
 .container-turno .turno__titulo {
   width: 100%;
   height: 10%;
-  padding: 20px;
+  padding: 20px 0px 0px;
   text-align: center;
 }
 .container-turno .turno__formulario {
@@ -476,6 +486,9 @@ footer footer h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .turno__formulario h2 {
+    padding: 20px;
   }
 }
 
