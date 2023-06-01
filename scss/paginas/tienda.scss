@@ -4,6 +4,7 @@
     display: flex;
     text-align: center;
     flex-direction: column;
+    overflow:hidden;
     width: 100%;
     background-color: map-get($map: $colores-fondo, $key: tercero);
     h1{
