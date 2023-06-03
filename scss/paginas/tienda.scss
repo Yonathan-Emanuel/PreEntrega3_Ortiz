@@ -2,22 +2,38 @@
 
 .Tienda {
     display: flex;
-    text-align: center;
     flex-direction: column;
     overflow:hidden;
+    padding: 30px 30px 70px;
     width: 100%;
-    background-color: map-get($map: $colores-fondo, $key: tercero);
+    background-image: url(.././imagenes/tienda/tienda_fondo.png);
+    background-attachment: fixed;
     h1{
-        padding: 130px 120px 50px;
         text-align: center;
+        padding: 80px 0px 0px;
     }
-    .caja{
-        h4{
-            color: map-get($map: $colores-fuente, $key: secundario);
-            font-weight: 200;
-        }
-        img {
-            padding: 0 0 20px 0;
+    .container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        .caja{
+            width: 270px;
+            border: 1px solid map-get($map: $colores-fuente, $key: primario);
+            padding: 20px;
+            p {
+                color: map-get($map: $colores-fuente, $key: primario);
+            }
+    
+            h4{
+                color: map-get($map: $colores-fuente, $key: secundario);
+                font-weight: 400;
+                padding: 15px 0px 0px;
+            }
+        
+            h3{
+                padding: 0px 0px 15px;
+            }
+            
         }
     }
 }
